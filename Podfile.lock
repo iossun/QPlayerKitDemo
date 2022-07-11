@@ -1,0 +1,20 @@
+PODS:
+  - Bugly (2.5.91)
+  - Masonry (1.0.1)
+
+DEPENDENCIES:
+  - Bugly
+  - Masonry (= 1.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Bugly
+    - Masonry
+
+SPEC CHECKSUMS:
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+
+PODFILE CHECKSUM: a989eab77e859e7c73c7433bcc63a8c3e3870cb1
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191A33D3DE95BEE53D1291BF /* libPods-QPlayerKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB270EC738292736D9379BB /* libPods-QPlayerKitDemo.a */; };
+		9330F7E51ECE9F6B0036FD01 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9330F7E41ECE9F6B0036FD01 /* libstdc++.tbd */; };
+		933593761EF62B81007D41CE /* audiovorbis.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 933593711EF62B81007D41CE /* audiovorbis.ogg */; };
+		933593771EF62B81007D41CE /* gotham.mkv in Resources */ = {isa = PBXBuildFile; fileRef = 933593721EF62B81007D41CE /* gotham.mkv */; };
+		9335C7BF1ECE881500340586 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7BE1ECE881500340586 /* AdSupport.framework */; };
+		9335C7C31ECE882900340586 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7C21ECE882900340586 /* libz.tbd */; };
+		9335C7C51ECE883200340586 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7C41ECE883200340586 /* VideoToolbox.framework */; };
+		9335C7C71ECE886300340586 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7C61ECE886300340586 /* CoreVideo.framework */; };
+		9335C7C91ECE889600340586 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7C81ECE889600340586 /* OpenGLES.framework */; };
+		9335C7CB1ECE88A300340586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7CA1ECE88A300340586 /* Foundation.framework */; };
+		9335C7CD1ECE88AC00340586 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7CC1ECE88AC00340586 /* AVKit.framework */; };
+		9335C7CF1ECE88BA00340586 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7CE1ECE88BA00340586 /* QuartzCore.framework */; };
+		9335C7D11ECE88CC00340586 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7D01ECE88CC00340586 /* MediaPlayer.framework */; };
+		9335C7D31ECE88D900340586 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7D21ECE88D900340586 /* CoreMedia.framework */; };
+		9335C7D51ECE88E400340586 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7D41ECE88E400340586 /* AudioToolbox.framework */; };
+		9335C7D71ECE88ED00340586 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7D61ECE88ED00340586 /* AVFoundation.framework */; };
+		9335C7D91ECE88FC00340586 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335C7D81ECE88FC00340586 /* CoreAudio.framework */; };
+		93A7E0131F9F4DCA004A8AF1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A7E00E1F9F4DCA004A8AF1 /* CoreTelephony.framework */; };
+		93F0C99F1ECD4B280089277C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F0C99E1ECD4B280089277C /* main.m */; };
+		93F0C9AA1ECD4B280089277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F0C9A91ECD4B280089277C /* Assets.xcassets */; };
+		93F0C9AD1ECD4B280089277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0C9AB1ECD4B280089277C /* LaunchScreen.storyboard */; };
+		93F0C9B81ECD4B280089277C /* PLPlayerKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F0C9B71ECD4B280089277C /* PLPlayerKitDemoUITests.m */; };
+		C3B3E74E208F173000B914B8 /* QNConfigListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E744208F173000B914B8 /* QNConfigListTableViewCell.m */; };
+		C3B3E74F208F173000B914B8 /* QNClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E746208F173000B914B8 /* QNClassModel.m */; };
+		C3B3E750208F173000B914B8 /* QNPlayerConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E74A208F173000B914B8 /* QNPlayerConfigViewController.m */; };
+		C3B3E751208F173000B914B8 /* QNOptionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E74C208F173000B914B8 /* QNOptionListView.m */; };
+		C3B3E752208F173000B914B8 /* QNConfigSegTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E74D208F173000B914B8 /* QNConfigSegTableViewCell.m */; };
+		C3B3E756208F173C00B914B8 /* QNPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3E755208F173C00B914B8 /* QNPlayerMaskView.m */; };
+		C3DF95B81FD54D4600686C11 /* QNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF95B41FD54D4600686C11 /* QNHomeViewController.m */; };
+		C3DF95B91FD54D4600686C11 /* QNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF95B61FD54D4600686C11 /* QNAppDelegate.m */; };
+		C3DF95FA1FD555B600686C11 /* QNScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF95BE1FD54D5500686C11 /* QNScanViewController.m */; };
+		E3027CAC283F7EA600E7040E /* QNInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3027CA3283F7E9800E7040E /* QNInfoHeaderView.m */; };
+		E3027CAD283F7EA600E7040E /* QNPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3027CA4283F7E9900E7040E /* QNPlayerViewController.m */; };
+		E3027CAF283F7EA600E7040E /* QNURLListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3027CA8283F7EA100E7040E /* QNURLListTableViewCell.m */; };
+		E34CB9CC2851C67F00477A47 /* QNConfigInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E34CB9CB2851C67C00477A47 /* QNConfigInputTableViewCell.m */; };
+		E34CB9CF2851ED7F00477A47 /* urls.json in Resources */ = {isa = PBXBuildFile; fileRef = E34CB9CE2851ED7E00477A47 /* urls.json */; };
+		E34CB9D22851EDC600477A47 /* QNPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E34CB9D12851EDC600477A47 /* QNPlayerModel.m */; };
+		E3907E0B2759FD8200E89D72 /* source264_mp4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E3907E042759FC4000E89D72 /* source264_mp4.mp4 */; };
+		E3907E0C2759FDAC00E89D72 /* source264_flv.flv in Resources */ = {isa = PBXBuildFile; fileRef = E3907E062759FC4200E89D72 /* source264_flv.flv */; };
+		E3907E0D2759FDAF00E89D72 /* source265_flv.flv in Resources */ = {isa = PBXBuildFile; fileRef = E3907E052759FC4100E89D72 /* source265_flv.flv */; };
+		E3907E0E2759FDB200E89D72 /* source265_mp4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E3907E032759FC3F00E89D72 /* source265_mp4.mp4 */; };
+		E3907E10275A0AC400E89D72 /* source_aac.aac in Resources */ = {isa = PBXBuildFile; fileRef = E3907E0F275A0AC300E89D72 /* source_aac.aac */; };
+		E3941A4D2876742400A07894 /* lite_urls.json in Resources */ = {isa = PBXBuildFile; fileRef = E3941A4B2876742400A07894 /* lite_urls.json */; };
+		E39CFCA228743DC300D738FF /* PLCellPlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E39CFCA028743DC200D738FF /* PLCellPlayerTableViewCell.m */; };
+		E39CFCA328743DC300D738FF /* PLCellPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39CFCA128743DC200D738FF /* PLCellPlayerViewController.m */; };
+		E3BD953E287BF28100B100E1 /* QDataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BD953D287BF28100B100E1 /* QDataHandle.m */; };
+		E3BD9543287BFEA900B100E1 /* libSoundTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BD9541287BFEA800B100E1 /* libSoundTouch.a */; };
+		E3BD9545287BFEEF00B100E1 /* QPlayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BD9542287BFEA900B100E1 /* QPlayerKit.framework */; platformFilter = ios; };
+		E3BD9546287BFEEF00B100E1 /* QPlayerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3BD9542287BFEA900B100E1 /* QPlayerKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93F0C9B41ECD4B280089277C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F0C9921ECD4B270089277C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F0C9991ECD4B280089277C;
+			remoteInfo = PLPlayerKitDemo;
+		};
+		E3907DF727586D2F00E89D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F0C9921ECD4B270089277C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F0C9991ECD4B280089277C;
+			remoteInfo = PLPlayerKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		414CB87525763E3F00A8974D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3BD9546287BFEEF00B100E1 /* QPlayerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BB270EC738292736D9379BB /* libPods-QPlayerKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QPlayerKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB778DB79786D8AAAA903D4 /* Pods-PLPlayerKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLPlayerKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLPlayerKitDemo/Pods-PLPlayerKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4E03A2DA473822CCDB07F4D9 /* Pods-QPlayerKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QPlayerKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QPlayerKitDemo/Pods-QPlayerKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		853C21D36CD428085FDA7656 /* Pods-QPlayerKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QPlayerKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QPlayerKitDemo/Pods-QPlayerKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8923CCE4F6CF15054A2173F0 /* Pods-PLPlayerKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLPlayerKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLPlayerKitDemo/Pods-PLPlayerKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9330F7E41ECE9F6B0036FD01 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		933593711EF62B81007D41CE /* audiovorbis.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = audiovorbis.ogg; sourceTree = "<group>"; };
+		933593721EF62B81007D41CE /* gotham.mkv */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham.mkv; sourceTree = "<group>"; };
+		9335C7BE1ECE881500340586 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9335C7C01ECE882200340586 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		9335C7C21ECE882900340586 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9335C7C41ECE883200340586 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		9335C7C61ECE886300340586 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9335C7C81ECE889600340586 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9335C7CA1ECE88A300340586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9335C7CC1ECE88AC00340586 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9335C7CE1ECE88BA00340586 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9335C7D01ECE88CC00340586 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9335C7D21ECE88D900340586 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9335C7D41ECE88E400340586 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9335C7D61ECE88ED00340586 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9335C7D81ECE88FC00340586 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		93A7E00E1F9F4DCA004A8AF1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		93F0C99A1ECD4B280089277C /* QPlayerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QPlayerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F0C99E1ECD4B280089277C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93F0C9A91ECD4B280089277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93F0C9AC1ECD4B280089277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93F0C9AE1ECD4B280089277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F0C9B31ECD4B280089277C /* QPlayerKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPlayerKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F0C9B71ECD4B280089277C /* PLPlayerKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLPlayerKitDemoUITests.m; sourceTree = "<group>"; };
+		93F0C9B91ECD4B280089277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F67DAD1F26531600E31442 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../PLPlayerKit/Vendor/FFmpeg/libavcodec.a; sourceTree = "<group>"; };
+		B0F67DAE1F26531600E31442 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../PLPlayerKit/Vendor/FFmpeg/libavformat.a; sourceTree = "<group>"; };
+		B0F67DAF1F26531600E31442 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../PLPlayerKit/Vendor/FFmpeg/libavutil.a; sourceTree = "<group>"; };
+		B0F67DB01F26531600E31442 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../PLPlayerKit/Vendor/FFmpeg/libswresample.a; sourceTree = "<group>"; };
+		B0F67DB51F26532200E31442 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../PLPlayerKit/Vendor/OpenSSL/libcrypto.a; sourceTree = "<group>"; };
+		B0F67DB61F26532200E31442 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../PLPlayerKit/Vendor/OpenSSL/libssl.a; sourceTree = "<group>"; };
+		B0F67DB91F26532C00E31442 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = ../PLPlayerKit/Vendor/speex/libspeex.a; sourceTree = "<group>"; };
+		C33C04642022B9D600E1EAAD /* QNPublicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPublicHeader.h; sourceTree = "<group>"; };
+		C3B3E744208F173000B914B8 /* QNConfigListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNConfigListTableViewCell.m; sourceTree = "<group>"; };
+		C3B3E745208F173000B914B8 /* QNPlayerConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPlayerConfigViewController.h; sourceTree = "<group>"; };
+		C3B3E746208F173000B914B8 /* QNClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNClassModel.m; sourceTree = "<group>"; };
+		C3B3E747208F173000B914B8 /* QNOptionListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNOptionListView.h; sourceTree = "<group>"; };
+		C3B3E748208F173000B914B8 /* QNConfigSegTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNConfigSegTableViewCell.h; sourceTree = "<group>"; };
+		C3B3E749208F173000B914B8 /* QNClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNClassModel.h; sourceTree = "<group>"; };
+		C3B3E74A208F173000B914B8 /* QNPlayerConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPlayerConfigViewController.m; sourceTree = "<group>"; };
+		C3B3E74B208F173000B914B8 /* QNConfigListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNConfigListTableViewCell.h; sourceTree = "<group>"; };
+		C3B3E74C208F173000B914B8 /* QNOptionListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNOptionListView.m; sourceTree = "<group>"; };
+		C3B3E74D208F173000B914B8 /* QNConfigSegTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNConfigSegTableViewCell.m; sourceTree = "<group>"; };
+		C3B3E754208F173C00B914B8 /* QNPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPlayerMaskView.h; sourceTree = "<group>"; };
+		C3B3E755208F173C00B914B8 /* QNPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPlayerMaskView.m; sourceTree = "<group>"; };
+		C3DF95B41FD54D4600686C11 /* QNHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNHomeViewController.m; sourceTree = "<group>"; };
+		C3DF95B51FD54D4600686C11 /* QNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNAppDelegate.h; sourceTree = "<group>"; };
+		C3DF95B61FD54D4600686C11 /* QNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNAppDelegate.m; sourceTree = "<group>"; };
+		C3DF95B71FD54D4600686C11 /* QNHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNHomeViewController.h; sourceTree = "<group>"; };
+		C3DF95BD1FD54D5500686C11 /* QNScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNScanViewController.h; sourceTree = "<group>"; };
+		C3DF95BE1FD54D5500686C11 /* QNScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNScanViewController.m; sourceTree = "<group>"; };
+		E3027CA2283F7E9600E7040E /* QNPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPlayerViewController.h; sourceTree = "<group>"; };
+		E3027CA3283F7E9800E7040E /* QNInfoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNInfoHeaderView.m; sourceTree = "<group>"; };
+		E3027CA4283F7E9900E7040E /* QNPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPlayerViewController.m; sourceTree = "<group>"; };
+		E3027CA5283F7E9B00E7040E /* QNURLListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNURLListTableViewCell.h; sourceTree = "<group>"; };
+		E3027CA8283F7EA100E7040E /* QNURLListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNURLListTableViewCell.m; sourceTree = "<group>"; };
+		E3027CA9283F7EA300E7040E /* QNInfoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNInfoHeaderView.h; sourceTree = "<group>"; };
+		E34CB9CA2851C67C00477A47 /* QNConfigInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNConfigInputTableViewCell.h; sourceTree = "<group>"; };
+		E34CB9CB2851C67C00477A47 /* QNConfigInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNConfigInputTableViewCell.m; sourceTree = "<group>"; };
+		E34CB9CE2851ED7E00477A47 /* urls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = urls.json; sourceTree = "<group>"; };
+		E34CB9D02851EDC500477A47 /* QNPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNPlayerModel.h; sourceTree = "<group>"; };
+		E34CB9D12851EDC600477A47 /* QNPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNPlayerModel.m; sourceTree = "<group>"; };
+		E3907DF327586D2F00E89D72 /* QPlayerKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPlayerKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3907DF527586D2F00E89D72 /* PLPlayerKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLPlayerKitDemoTests.m; sourceTree = "<group>"; };
+		E3907E032759FC3F00E89D72 /* source265_mp4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = source265_mp4.mp4; sourceTree = "<group>"; };
+		E3907E042759FC4000E89D72 /* source264_mp4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = source264_mp4.mp4; sourceTree = "<group>"; };
+		E3907E052759FC4100E89D72 /* source265_flv.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = source265_flv.flv; sourceTree = "<group>"; };
+		E3907E062759FC4200E89D72 /* source264_flv.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = source264_flv.flv; sourceTree = "<group>"; };
+		E3907E0F275A0AC300E89D72 /* source_aac.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = source_aac.aac; sourceTree = "<group>"; };
+		E3941A4B2876742400A07894 /* lite_urls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lite_urls.json; sourceTree = "<group>"; };
+		E39CFC9D28743DC100D738FF /* PLCellPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCellPlayerViewController.h; sourceTree = "<group>"; };
+		E39CFC9F28743DC200D738FF /* PLCellPlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCellPlayerTableViewCell.h; sourceTree = "<group>"; };
+		E39CFCA028743DC200D738FF /* PLCellPlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCellPlayerTableViewCell.m; sourceTree = "<group>"; };
+		E39CFCA128743DC200D738FF /* PLCellPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCellPlayerViewController.m; sourceTree = "<group>"; };
+		E3BD953C287BF28100B100E1 /* QDataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDataHandle.h; sourceTree = "<group>"; };
+		E3BD953D287BF28100B100E1 /* QDataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDataHandle.m; sourceTree = "<group>"; };
+		E3BD9541287BFEA800B100E1 /* libSoundTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundTouch.a; sourceTree = "<group>"; };
+		E3BD9542287BFEA900B100E1 /* QPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QPlayerKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93F0C9971ECD4B280089277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A7E0131F9F4DCA004A8AF1 /* CoreTelephony.framework in Frameworks */,
+				9330F7E51ECE9F6B0036FD01 /* libstdc++.tbd in Frameworks */,
+				9335C7D91ECE88FC00340586 /* CoreAudio.framework in Frameworks */,
+				9335C7D71ECE88ED00340586 /* AVFoundation.framework in Frameworks */,
+				9335C7D51ECE88E400340586 /* AudioToolbox.framework in Frameworks */,
+				9335C7D31ECE88D900340586 /* CoreMedia.framework in Frameworks */,
+				9335C7D11ECE88CC00340586 /* MediaPlayer.framework in Frameworks */,
+				E3BD9543287BFEA900B100E1 /* libSoundTouch.a in Frameworks */,
+				E3BD9545287BFEEF00B100E1 /* QPlayerKit.framework in Frameworks */,
+				9335C7CF1ECE88BA00340586 /* QuartzCore.framework in Frameworks */,
+				9335C7CD1ECE88AC00340586 /* AVKit.framework in Frameworks */,
+				9335C7CB1ECE88A300340586 /* Foundation.framework in Frameworks */,
+				9335C7C91ECE889600340586 /* OpenGLES.framework in Frameworks */,
+				9335C7C71ECE886300340586 /* CoreVideo.framework in Frameworks */,
+				9335C7C51ECE883200340586 /* VideoToolbox.framework in Frameworks */,
+				9335C7C31ECE882900340586 /* libz.tbd in Frameworks */,
+				9335C7BF1ECE881500340586 /* AdSupport.framework in Frameworks */,
+				191A33D3DE95BEE53D1291BF /* libPods-QPlayerKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F0C9B01ECD4B280089277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3907DF027586D2F00E89D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933593701EF62B81007D41CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E3941A4B2876742400A07894 /* lite_urls.json */,
+				E34CB9CE2851ED7E00477A47 /* urls.json */,
+				E3907E022759FBD500E89D72 /* testSrc */,
+				933593711EF62B81007D41CE /* audiovorbis.ogg */,
+				933593721EF62B81007D41CE /* gotham.mkv */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9335C7BD1ECE881500340586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93A7E00E1F9F4DCA004A8AF1 /* CoreTelephony.framework */,
+				B0F67DB91F26532C00E31442 /* libspeex.a */,
+				B0F67DB51F26532200E31442 /* libcrypto.a */,
+				B0F67DB61F26532200E31442 /* libssl.a */,
+				B0F67DAD1F26531600E31442 /* libavcodec.a */,
+				B0F67DAE1F26531600E31442 /* libavformat.a */,
+				B0F67DAF1F26531600E31442 /* libavutil.a */,
+				B0F67DB01F26531600E31442 /* libswresample.a */,
+				9330F7E41ECE9F6B0036FD01 /* libstdc++.tbd */,
+				9335C7D81ECE88FC00340586 /* CoreAudio.framework */,
+				9335C7D61ECE88ED00340586 /* AVFoundation.framework */,
+				9335C7D41ECE88E400340586 /* AudioToolbox.framework */,
+				9335C7D21ECE88D900340586 /* CoreMedia.framework */,
+				9335C7D01ECE88CC00340586 /* MediaPlayer.framework */,
+				9335C7CE1ECE88BA00340586 /* QuartzCore.framework */,
+				9335C7CC1ECE88AC00340586 /* AVKit.framework */,
+				9335C7CA1ECE88A300340586 /* Foundation.framework */,
+				9335C7C81ECE889600340586 /* OpenGLES.framework */,
+				9335C7C61ECE886300340586 /* CoreVideo.framework */,
+				9335C7C41ECE883200340586 /* VideoToolbox.framework */,
+				9335C7C21ECE882900340586 /* libz.tbd */,
+				9335C7C01ECE882200340586 /* libiconv.tbd */,
+				9335C7BE1ECE881500340586 /* AdSupport.framework */,
+				0BB270EC738292736D9379BB /* libPods-QPlayerKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93F0C9911ECD4B270089277C = {
+			isa = PBXGroup;
+			children = (
+				E3BD9541287BFEA800B100E1 /* libSoundTouch.a */,
+				E3BD9542287BFEA900B100E1 /* QPlayerKit.framework */,
+				93F0C99C1ECD4B280089277C /* QPlayerKitDemo */,
+				93F0C9B61ECD4B280089277C /* QPlayerKitDemoUITests */,
+				E3907DF427586D2F00E89D72 /* QPlayerKitDemoTests */,
+				93F0C99B1ECD4B280089277C /* Products */,
+				9335C7BD1ECE881500340586 /* Frameworks */,
+				B8EB755B3B6C4F4898EA53BB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		93F0C99B1ECD4B280089277C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93F0C99A1ECD4B280089277C /* QPlayerKitDemo.app */,
+				93F0C9B31ECD4B280089277C /* QPlayerKitDemoUITests.xctest */,
+				E3907DF327586D2F00E89D72 /* QPlayerKitDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93F0C99C1ECD4B280089277C /* QPlayerKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF95B51FD54D4600686C11 /* QNAppDelegate.h */,
+				C3DF95B61FD54D4600686C11 /* QNAppDelegate.m */,
+				C3DF95B71FD54D4600686C11 /* QNHomeViewController.h */,
+				C3DF95B41FD54D4600686C11 /* QNHomeViewController.m */,
+				E3027CA9283F7EA300E7040E /* QNInfoHeaderView.h */,
+				E3027CA3283F7E9800E7040E /* QNInfoHeaderView.m */,
+				E3027CA2283F7E9600E7040E /* QNPlayerViewController.h */,
+				E3027CA4283F7E9900E7040E /* QNPlayerViewController.m */,
+				E3027CA5283F7E9B00E7040E /* QNURLListTableViewCell.h */,
+				E3027CA8283F7EA100E7040E /* QNURLListTableViewCell.m */,
+				E39CFC9F28743DC200D738FF /* PLCellPlayerTableViewCell.h */,
+				E39CFCA028743DC200D738FF /* PLCellPlayerTableViewCell.m */,
+				E39CFC9D28743DC100D738FF /* PLCellPlayerViewController.h */,
+				E39CFCA128743DC200D738FF /* PLCellPlayerViewController.m */,
+				C3B3E743208F173000B914B8 /* PlayerSettings */,
+				C3DF95BC1FD54D5500686C11 /* ScanCode */,
+				C3B3E753208F173C00B914B8 /* Public */,
+				933593701EF62B81007D41CE /* Resource */,
+				C33C04642022B9D600E1EAAD /* QNPublicHeader.h */,
+				93F0C9A91ECD4B280089277C /* Assets.xcassets */,
+				93F0C9AB1ECD4B280089277C /* LaunchScreen.storyboard */,
+				93F0C9AE1ECD4B280089277C /* Info.plist */,
+				93F0C99D1ECD4B280089277C /* Supporting Files */,
+			);
+			path = QPlayerKitDemo;
+			sourceTree = "<group>";
+		};
+		93F0C99D1ECD4B280089277C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93F0C99E1ECD4B280089277C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93F0C9B61ECD4B280089277C /* QPlayerKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93F0C9B71ECD4B280089277C /* PLPlayerKitDemoUITests.m */,
+				93F0C9B91ECD4B280089277C /* Info.plist */,
+			);
+			path = QPlayerKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		B8EB755B3B6C4F4898EA53BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8923CCE4F6CF15054A2173F0 /* Pods-PLPlayerKitDemo.debug.xcconfig */,
+				2DB778DB79786D8AAAA903D4 /* Pods-PLPlayerKitDemo.release.xcconfig */,
+				853C21D36CD428085FDA7656 /* Pods-QPlayerKitDemo.debug.xcconfig */,
+				4E03A2DA473822CCDB07F4D9 /* Pods-QPlayerKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3B3E743208F173000B914B8 /* PlayerSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C3B3E745208F173000B914B8 /* QNPlayerConfigViewController.h */,
+				C3B3E74A208F173000B914B8 /* QNPlayerConfigViewController.m */,
+				C3B3E74B208F173000B914B8 /* QNConfigListTableViewCell.h */,
+				C3B3E744208F173000B914B8 /* QNConfigListTableViewCell.m */,
+				C3B3E748208F173000B914B8 /* QNConfigSegTableViewCell.h */,
+				C3B3E74D208F173000B914B8 /* QNConfigSegTableViewCell.m */,
+				E34CB9CA2851C67C00477A47 /* QNConfigInputTableViewCell.h */,
+				E34CB9CB2851C67C00477A47 /* QNConfigInputTableViewCell.m */,
+				C3B3E747208F173000B914B8 /* QNOptionListView.h */,
+				C3B3E74C208F173000B914B8 /* QNOptionListView.m */,
+				C3B3E749208F173000B914B8 /* QNClassModel.h */,
+				C3B3E746208F173000B914B8 /* QNClassModel.m */,
+				E34CB9D02851EDC500477A47 /* QNPlayerModel.h */,
+				E34CB9D12851EDC600477A47 /* QNPlayerModel.m */,
+				E3BD953C287BF28100B100E1 /* QDataHandle.h */,
+				E3BD953D287BF28100B100E1 /* QDataHandle.m */,
+			);
+			path = PlayerSettings;
+			sourceTree = "<group>";
+		};
+		C3B3E753208F173C00B914B8 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				C3B3E754208F173C00B914B8 /* QNPlayerMaskView.h */,
+				C3B3E755208F173C00B914B8 /* QNPlayerMaskView.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		C3DF95BC1FD54D5500686C11 /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF95BD1FD54D5500686C11 /* QNScanViewController.h */,
+				C3DF95BE1FD54D5500686C11 /* QNScanViewController.m */,
+			);
+			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		E3907DF427586D2F00E89D72 /* QPlayerKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3907DF527586D2F00E89D72 /* PLPlayerKitDemoTests.m */,
+			);
+			path = QPlayerKitDemoTests;
+			sourceTree = "<group>";
+		};
+		E3907E022759FBD500E89D72 /* testSrc */ = {
+			isa = PBXGroup;
+			children = (
+				E3907E0F275A0AC300E89D72 /* source_aac.aac */,
+				E3907E042759FC4000E89D72 /* source264_mp4.mp4 */,
+				E3907E062759FC4200E89D72 /* source264_flv.flv */,
+				E3907E052759FC4100E89D72 /* source265_flv.flv */,
+				E3907E032759FC3F00E89D72 /* source265_mp4.mp4 */,
+			);
+			path = testSrc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93F0C9991ECD4B280089277C /* QPlayerKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F0C9BC1ECD4B280089277C /* Build configuration list for PBXNativeTarget "QPlayerKitDemo" */;
+			buildPhases = (
+				23E8CE87633E04B7EC553993 /* [CP] Check Pods Manifest.lock */,
+				41623C4A256F95F50070D628 /* update build number */,
+				93F0C9961ECD4B280089277C /* Sources */,
+				93F0C9971ECD4B280089277C /* Frameworks */,
+				93F0C9981ECD4B280089277C /* Resources */,
+				414CB87525763E3F00A8974D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QPlayerKitDemo;
+			productName = PLPlayerKitDemo;
+			productReference = 93F0C99A1ECD4B280089277C /* QPlayerKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93F0C9B21ECD4B280089277C /* QPlayerKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F0C9BF1ECD4B280089277C /* Build configuration list for PBXNativeTarget "QPlayerKitDemoUITests" */;
+			buildPhases = (
+				93F0C9AF1ECD4B280089277C /* Sources */,
+				93F0C9B01ECD4B280089277C /* Frameworks */,
+				93F0C9B11ECD4B280089277C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93F0C9B51ECD4B280089277C /* PBXTargetDependency */,
+			);
+			name = QPlayerKitDemoUITests;
+			productName = PLPlayerKitDemoUITests;
+			productReference = 93F0C9B31ECD4B280089277C /* QPlayerKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E3907DF227586D2F00E89D72 /* QPlayerKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3907DFE27586D2F00E89D72 /* Build configuration list for PBXNativeTarget "QPlayerKitDemoTests" */;
+			buildPhases = (
+				E3907DEF27586D2F00E89D72 /* Sources */,
+				E3907DF027586D2F00E89D72 /* Frameworks */,
+				E3907DF127586D2F00E89D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3907DF827586D2F00E89D72 /* PBXTargetDependency */,
+			);
+			name = QPlayerKitDemoTests;
+			productName = PLPlayerKitDemoTests;
+			productReference = E3907DF327586D2F00E89D72 /* QPlayerKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93F0C9921ECD4B270089277C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = Aaron;
+				TargetAttributes = {
+					93F0C9991ECD4B280089277C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					93F0C9B21ECD4B280089277C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W2TP34G2MM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93F0C9991ECD4B280089277C;
+					};
+					E3907DF227586D2F00E89D72 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 93F0C9991ECD4B280089277C;
+					};
+				};
+			};
+			buildConfigurationList = 93F0C9951ECD4B270089277C /* Build configuration list for PBXProject "QPlayerKitDemo" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93F0C9911ECD4B270089277C;
+			productRefGroup = 93F0C99B1ECD4B280089277C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93F0C9991ECD4B280089277C /* QPlayerKitDemo */,
+				93F0C9B21ECD4B280089277C /* QPlayerKitDemoUITests */,
+				E3907DF227586D2F00E89D72 /* QPlayerKitDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93F0C9981ECD4B280089277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34CB9CF2851ED7F00477A47 /* urls.json in Resources */,
+				E3907E0E2759FDB200E89D72 /* source265_mp4.mp4 in Resources */,
+				E3907E0B2759FD8200E89D72 /* source264_mp4.mp4 in Resources */,
+				933593771EF62B81007D41CE /* gotham.mkv in Resources */,
+				93F0C9AD1ECD4B280089277C /* LaunchScreen.storyboard in Resources */,
+				E3907E0D2759FDAF00E89D72 /* source265_flv.flv in Resources */,
+				E3907E10275A0AC400E89D72 /* source_aac.aac in Resources */,
+				E3941A4D2876742400A07894 /* lite_urls.json in Resources */,
+				E3907E0C2759FDAC00E89D72 /* source264_flv.flv in Resources */,
+				93F0C9AA1ECD4B280089277C /* Assets.xcassets in Resources */,
+				933593761EF62B81007D41CE /* audiovorbis.ogg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F0C9B11ECD4B280089277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3907DF127586D2F00E89D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E8CE87633E04B7EC553993 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QPlayerKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41623C4A256F95F50070D628 /* update build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "update build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nshortVersion=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\n\ngitVersion=$(git log -1 --pretty=format:\"git-%cd-%h\" --date=short 2> /dev/null)\nbuildNumber=\"$shortVersion.$gitVersion\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93F0C9961ECD4B280089277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39CFCA228743DC300D738FF /* PLCellPlayerTableViewCell.m in Sources */,
+				C3B3E756208F173C00B914B8 /* QNPlayerMaskView.m in Sources */,
+				C3B3E752208F173000B914B8 /* QNConfigSegTableViewCell.m in Sources */,
+				E3027CAD283F7EA600E7040E /* QNPlayerViewController.m in Sources */,
+				C3DF95FA1FD555B600686C11 /* QNScanViewController.m in Sources */,
+				E34CB9D22851EDC600477A47 /* QNPlayerModel.m in Sources */,
+				E3027CAC283F7EA600E7040E /* QNInfoHeaderView.m in Sources */,
+				C3B3E74F208F173000B914B8 /* QNClassModel.m in Sources */,
+				C3DF95B81FD54D4600686C11 /* QNHomeViewController.m in Sources */,
+				C3DF95B91FD54D4600686C11 /* QNAppDelegate.m in Sources */,
+				93F0C99F1ECD4B280089277C /* main.m in Sources */,
+				E34CB9CC2851C67F00477A47 /* QNConfigInputTableViewCell.m in Sources */,
+				E3027CAF283F7EA600E7040E /* QNURLListTableViewCell.m in Sources */,
+				C3B3E751208F173000B914B8 /* QNOptionListView.m in Sources */,
+				C3B3E750208F173000B914B8 /* QNPlayerConfigViewController.m in Sources */,
+				C3B3E74E208F173000B914B8 /* QNConfigListTableViewCell.m in Sources */,
+				E39CFCA328743DC300D738FF /* PLCellPlayerViewController.m in Sources */,
+				E3BD953E287BF28100B100E1 /* QDataHandle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F0C9AF1ECD4B280089277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F0C9B81ECD4B280089277C /* PLPlayerKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3907DEF27586D2F00E89D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93F0C9B51ECD4B280089277C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F0C9991ECD4B280089277C /* QPlayerKitDemo */;
+			targetProxy = 93F0C9B41ECD4B280089277C /* PBXContainerItemProxy */;
+		};
+		E3907DF827586D2F00E89D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F0C9991ECD4B280089277C /* QPlayerKitDemo */;
+			targetProxy = E3907DF727586D2F00E89D72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93F0C9AB1ECD4B280089277C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93F0C9AC1ECD4B280089277C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93F0C9BA1ECD4B280089277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93F0C9BB1ECD4B280089277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93F0C9BD1ECD4B280089277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853C21D36CD428085FDA7656 /* Pods-QPlayerKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = QPlayerKitDemo/QNPublicHeader.h;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../PLPlayerKit/PLPlayerKit/Public",
+					"\"$(SRCROOT)/../QPlayerKit/qplayer2-core/iOS/component/player\"",
+				);
+				INFOPLIST_FILE = QPlayerKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BlocksKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 0.0.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QPlayerKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../qplayer2-core/qplayer2-core/iOS/component/player\"",
+					"\"$(SRCROOT)/../qplayer2-core/qplayer2-core/iOS/common\"",
+				);
+			};
+			name = Debug;
+		};
+		93F0C9BE1ECD4B280089277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E03A2DA473822CCDB07F4D9 /* Pods-QPlayerKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = "";
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = QPlayerKitDemo/QNPublicHeader.h;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../PLPlayerKit/PLPlayerKit/Public",
+					"\"$(SRCROOT)/../QPlayerKit/qplayer2-core/iOS/component/player\"",
+				);
+				INFOPLIST_FILE = QPlayerKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BlocksKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 0.0.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QPlayerKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../qplayer2-core/qplayer2-core/iOS/component/player\"",
+					"\"$(SRCROOT)/../qplayer2-core/qplayer2-core/iOS/common\"",
+				);
+			};
+			name = Release;
+		};
+		93F0C9C01ECD4B280089277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = QPlayerKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QPlayerKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QPlayerKitDemo;
+			};
+			name = Debug;
+		};
+		93F0C9C11ECD4B280089277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = QPlayerKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QPlayerKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QPlayerKitDemo;
+			};
+			name = Release;
+		};
+		E3907DF927586D2F00E89D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PLPlayerKit/PLPlayerKit/Public\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mumu.QPlayerKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QPlayerKitDemo.app/QPlayerKitDemo";
+			};
+			name = Debug;
+		};
+		E3907DFA27586D2F00E89D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PLPlayerKit/PLPlayerKit/Public\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mumu.QPlayerKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QPlayerKitDemo.app/QPlayerKitDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93F0C9951ECD4B270089277C /* Build configuration list for PBXProject "QPlayerKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F0C9BA1ECD4B280089277C /* Debug */,
+				93F0C9BB1ECD4B280089277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93F0C9BC1ECD4B280089277C /* Build configuration list for PBXNativeTarget "QPlayerKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F0C9BD1ECD4B280089277C /* Debug */,
+				93F0C9BE1ECD4B280089277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93F0C9BF1ECD4B280089277C /* Build configuration list for PBXNativeTarget "QPlayerKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F0C9C01ECD4B280089277C /* Debug */,
+				93F0C9C11ECD4B280089277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3907DFE27586D2F00E89D72 /* Build configuration list for PBXNativeTarget "QPlayerKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3907DF927586D2F00E89D72 /* Debug */,
+				E3907DFA27586D2F00E89D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93F0C9921ECD4B270089277C /* Project object */;
+}
